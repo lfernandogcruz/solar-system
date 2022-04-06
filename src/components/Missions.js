@@ -6,6 +6,13 @@
 // Será validado se o componente <Missions /> é renderizado.
 // Será validado se existe uma div que possui o data-testid="missions".
 // Será validado se o componente <Missions /> está sendo renderizado no componente principal App.
+// req 8
+// Renderize o componente Title dentro do componente Missions.
+// 1. Renderize o componente Title dentro do componente Missions.
+// 2. O componente Title deve ser renderizado recebendo a prop headline com o valor "Missões"
+// O que será verificado
+// Será validado se o texto "Missões" é renderizado usando o componente Title dentro
+// do componente Missions.
 import React from 'react';
 // import missions from '../data/missions';
 import Title from './Title';
@@ -21,17 +28,6 @@ class Missions extends React.Component {
 }
 
 export default Missions;
-
-// req 8
-// Renderize o componente Title dentro do componente Missions.
-
-// 1. Renderize o componente Title dentro do componente Missions.
-
-// 2. O componente Title deve ser renderizado recebendo a prop headline com o valor "Missões"
-
-// O que será verificado
-// Será validado se o texto "Missões" é renderizado usando o componente Title dentro
-// do componente Missions.
 
 // req 10
 // Renderize uma lista com as missões espaciais
