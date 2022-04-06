@@ -4,8 +4,20 @@
 // atributo data-testid="missions".
 
 // 3. Renderize o componente Missions abaixo do SolarSystem, dentro do componente principal App.
+import React from 'react';
+// import missions from '../data/missions';
 
-// // import missions from '../data/missions';
+class Missions extends React.Component {
+  render() {
+    return (
+      <div data-testid="missions">
+        <p>sample</p>
+      </div>
+    );
+  }
+}
+
+export default Missions;
 
 // O que será verificado
 // Será validado se o componente <Missions /> é renderizado.
