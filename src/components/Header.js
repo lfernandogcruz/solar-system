@@ -5,6 +5,15 @@
 // O texto da tag h1 deve ser "Sistema Solar".
 
 // 3. Renderize o componente Header dentro do componente principal App.
+import React from 'react';
+
+class Header extends React.Component {
+  render() {
+    return <header><h1>Sistema Solar</h1></header>;
+  }
+}
+
+export default Header;
 
 // O que será verificado
 // Será validado se o componente <Header /> é renderizado.
