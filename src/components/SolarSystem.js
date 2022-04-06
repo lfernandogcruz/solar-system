@@ -1,11 +1,12 @@
 import React from 'react';
+import Title from './Title';
 // // import planets from '../data/planets'; // req 6
 
 class SolarSystem extends React.Component {
   render() {
     return (
       <div data-testid="solar-system">
-        <p>sample</p>
+        <Title headline="Planetas" />
       </div>
     );
   }
@@ -17,22 +18,16 @@ export default SolarSystem;
 // 1. Crie um componente chamado SolarSystem dentro da pasta src/components.
 // 2. Este componente deve ter uma div que envolva todo seu conteúdo e
 // que tenha o atributo data-testid="solar-system".
-
 // 3. Renderize o componente SolarSystem abaixo do Header, dentro do componente principal App.
-
 // O que será verificado
 // Será validado se o componente <SolarSystem /> é renderizado.
-
 // Será validado se existe uma div que possui o data-testid="solar-system".
-
 // Será validado se o componente <SolarSystem /> está sendo renderizado
 // no componente principal App.
 
 // req 4
 // 1. Renderize o componente Title dentro do componente SolarSystem.
-
 // 2. O componente Title deve ser renderizado recebendo a prop headline com o valor "Planetas".
-
 // O que será verificado
 // Será validado se o texto "Planetas" é renderizado usando o componente Title
 // dentro do componente SolarSystem.
