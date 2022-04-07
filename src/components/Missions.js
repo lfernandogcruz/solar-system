@@ -14,14 +14,24 @@
 // Será validado se o texto "Missões" é renderizado usando o componente Title dentro
 // do componente Missions.
 import React from 'react';
-// import missions from '../data/missions';
+import missions from '../data/missions';
 import Title from './Title';
+import MissionCard from './MissionCard';
 
 class Missions extends React.Component {
   render() {
     return (
       <div data-testid="missions">
         <Title headline="Missões" />
+        {missions.map((elMission) => (
+          <MissionCard
+            name={ elMission.name }
+            year={ elMission.year }
+            country={ elMission.country }
+            destination={ elMission.destination }
+            key={ elMission.name }
+          />
+        ))}
       </div>
     );
   }
@@ -31,17 +41,12 @@ export default Missions;
 
 // req 10
 // Renderize uma lista com as missões espaciais
-
 // 1. Renderize uma lista com as missões espaciais dentro componente Missions.
-
 // 2. Utilize o componente MissionCard para renderizar cada item da lista de missões.
-
 // 3. Você encontrará a lista com as informações de cada missão espacial
 // no arquivo src/data/missions.js.
-
 // 4. Você deve importar a lista no componente Missions usando o código:
 // import missions from '../data/missions';
-
 // 5. A lista de missões espaciais é um array de objetos no seguinte formato:
 // {
 //   name: 'Nome da missão',
